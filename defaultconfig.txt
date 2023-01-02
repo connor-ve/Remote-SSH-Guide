@@ -1,0 +1,4 @@
+Host CSUSpirit
+    Hostname spirit.eecs.csuohio.edu
+    User {YOUR_USER}
+    IdentityFile ~/.ssh/id_rsa
