@@ -25,7 +25,7 @@ ___
 
 To start we need to open our terminal of choice. If you have not used Terminal before it will probably hidden in your applications within a folder. It can be accessed through the applications page or using spotlight search. When located open up terminal and run `pwd` to make sure your are in your user directory.  
 
-When creating our SSH key we want to store it inside a hidden folder within our file directory. To view your hidden folders within our terminal typeing the command `ls -a` to return all dot folders which are located in the current directory. After running that command if you dont see a folder called  __.ssh__, we will need to make one! To make a folder inside of terminal we will run the command `mkdir .ssh`. 
+When creating our SSH key we want to store it inside a hidden folder within our file directory. To view your hidden folders within our terminal typeing the command `ls -a` to return all dot folders which are located in the current directory. After running that command if you dont see a folder called  **.ssh**, we will need to make one! To make a folder inside of terminal we will run the command `mkdir .ssh`. 
 
 Now that we have located the folder, we need to enter it using the `cd` command. Running `cd .ssh` will now navigate you into the __.ssh__ folder. 
 
