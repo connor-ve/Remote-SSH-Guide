@@ -11,7 +11,9 @@ As we will be using VScode as our preferred way to log in spirit and grail the f
 
 Assuming this is your first time using VScode consider taking the time to check our my other guide on my GitHub titled [Starting VScode Guide]() to help with learning how to use this widely verbose Text Editor! 
 
-To make sure we are set up to connect to our remote server we will be using one extension to assist us with that process. To download our needed extension, either click [Remote - SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh) or open your extensions tab in VSCode and type "Remote - SSH" in. Proceed to download the extension to your machine! 
+To make sure we are set up to connect to our remote server we will be using one extension to assist us with that process. To download our needed extension, either click [Remote - SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh) or open your extensions tab in VSCode and type "Remote - SSH" in. Proceed to download the extension to your machine!
+
+![Extension](Screenshots/ExtensionPage.jpg)
 
 For the time being we are all ready for our next steps! 
 
@@ -96,9 +98,17 @@ ___
 
 Now that we have our full setup your SSH key VSCode will be able to log directly into our Linux server to act as a Client. For the next steps we need to configure your host settings so Visual Studio Code knows where we are logging into. 
 
+![](Screenshots/OpenConfig.jpg)
+
+![](Screenshots/Command.jpg)
+
 For this part, open visual studio and run the command `ctrl + shift + p`. For those familiar with VSCode they will know this allows us to search any command or setting within the Editor. Then we want to search "Remote-SSH: Open SSH Configuration File" and select this command. It will then ask you for the location of your config file to which I would recommend going with the defaulted directory in your recommended options. Click on the desired directory and you will be taken to the configuration file for the Remote-SSH Extension. Within my repository I have example of what to paste to this file, but make sure your replace {YOUR_USER} with your linux login. Once done with this, hit `cmd + s` to save your config file. You are now free to exit this file. 
 
-#### Opening up Spirit with Visual Studio Code 
+![](Screenshots/templateConfig.jpg)
+
+#### Opening up Spirit with Visual Studio Code
+
+![](Screenshots/RemoteSSH.jpg)
 
 Now to use VSCode as your client, you need to run Remote SSH and selection CSULinux from your list of hosts. To do this please click the __><__ in the bottom left of your window on visual studio code. To enter spirit please select either 'Connect to Host' or 'Connect Current Window to Host' then select CSULinux. This will open up a connection to CSU's server, and give you the option to select which folders you would like to see when it is established. Dont be concerned if the first time takes a minute to connect as this is normal. 
 
