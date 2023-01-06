@@ -22,6 +22,17 @@ Our next step will be setting up a [SSH key](https://jumpcloud.com/blog/what-are
 For this step there are some differences based on the OS that you are running. Below I will have both MacOS and Windows detailed, as those are what I am familiar with. If you are running linux I assume that the commands used within our MacOS instruction will work as we are using very basic commands that they both share. 
 ___
 ##### MacOS
+*Overview of Commands*
+```bash
+> pwd
+> cd .ssh
+> ssh-keygen
+... returns 3 prompts (HIT ENTER FOR EACH)
+> cat ~/.ssh/id_rsa.pub | ssh {your_username}@spirit.eecs.csuohio.edu 'cat >> ~/.ssh/authorized_keys'
+{your_username}'s password: (ENTER YOUR PASSWORD)
+Welcome to Ubuntu 20.04.5 LTS (GNU/Linux 5.14.0-1054-oem x86_64) 
+```
+
 
 To start we need to open our terminal of choice. If you have not used Terminal before it will probably hidden in your applications within a folder. It can be accessed through the applications page or using spotlight search. When located open up terminal and run `pwd` to make sure your are in your user directory.  
 
@@ -47,7 +58,38 @@ To test if this is working properly, you can attempt to login to spirit through 
 ___
 ___
 ##### Windows
-... Coming Soon
+*Overview of Commands*
+```PowerShell
+> pwd
+> cd .ssh
+> ssh-keygen
+... returns 3 prompts (HIT ENTER FOR EACH)
+> cat ~/.ssh/id_rsa.pub | ssh {your_username}@spirit.eecs.csuohio.edu 'cat >> ~/.ssh/authorized_keys'
+{your_username}'s password: (ENTER YOUR PASSWORD)
+Welcome to Ubuntu 20.04.5 LTS (GNU/Linux 5.14.0-1054-oem x86_64) 
+```
+
+To start we need to open Windows PowerShell. When located and open up PowerShell and run `pwd` to make sure your are in your user directory.  
+
+When creating our SSH key we want to store it inside a hidden folder within our file directory. To view your hidden folders within our PowerShell typeing the command `ls -a` to return all dot folders which are located in the current directory. After running that command if you dont see a folder called  **.ssh**, we will need to make one! To make a folder inside of PowerShell we will run the command `mkdir .ssh`. 
+
+Now that we have located the folder, we need to enter it using the `cd` command. Running `cd .ssh` will now navigate you into the __.ssh__ folder. 
+
+Next, we will be creating a SSH key within this folder. To do that we run the command `ssh-keygen`, this will immediately prompt you with 3 questions prior. For our purposes it is important you hit enter for each prompt as it will keep names consistent going forward. If all goes well it should display the key as a weird ASCII drawing. Congrats you have successfully created your key. 
+
+The next step will giving your SSH key to our linux server so that they can identify what computer is logging it. This will bypass your login going forward. 
+
+For this to occur we need to run two commands within our PowerShell, specifically from our __.ssh__ directory. For ease of use I have piped the two commands together as they are shown below:
+
+```
+cat ~/.ssh/id_rsa.pub | ssh {your_username}@spirit.eecs.csuohio.edu 'cat >> ~/.ssh/authorized_keys'
+```
+**Before Pasting this Command**
+Make sure your remove *{your_username}* and replace it with your spirit login. If you are unaware of your Linux Username or Password, please contact your professor.
+
+If all is well, after this is ran with your username it will ask for your password to access the server. Enter your linux password and you will have successfully added your public SSH key to the spirit. 
+
+To test if this is working properly, you can attempt to login to spirit through your terminal. If it doesn't ask for your passcode and immediately log you are good!
 ___
 ___
 #### Finalizing Visual Studio
