@@ -119,7 +119,7 @@ ssh {your_username}@spirit.eecs.csuohio.edu
 ```
 ___
 
-#### Finalizing Visual Studio
+## Finalizing Visual Studio
 
 Now that we have our full setup your SSH key VSCode will be able to log directly into our Linux server to act as a Client. For the next steps we need to configure your host settings so Visual Studio Code knows where we are logging into. 
 
@@ -133,7 +133,7 @@ Click on the desired directory and you will be taken to the configuration file f
 
 ![](Screenshots/templateConfig.jpg)
 
-#### Opening up Spirit with Visual Studio Code
+## Opening up Spirit with Visual Studio Code
 
 ![](Screenshots/RemoteSSH.jpg)
 
@@ -141,7 +141,7 @@ Now to use VSCode as your client, you need to run Remote SSH and selection CSULi
 
 Once connected you are free to use the Linux server for all of your homework or development needs. Rememeber this gives you a secure connection to our Spirit server, which is made for testing and development, not your Grail server as this does not allow for compiling code. You able to use grail from the terminal within VSCode or your terminal of choice. This was done to prevent accidentally compiling code on the wrong server!
 
-#### Thank You for Reading
+## Thank You for Reading
 
 My purpose for this guide was to help improve your workflow within our CSU linux server. For classes such as CIS 340 and CIS 345, being able to view multiple files and work within VScode can greatly help students focus on coding instead of dealing with the nuances of text editors within linux. 
 
