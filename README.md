@@ -45,11 +45,12 @@ Welcome to Ubuntu 20.04.5 LTS (GNU/Linux 5.14.0-1054-oem x86_64)
 ```
 
 *Instructions*
+
 To start we need to open our terminal of choice. If you have not used Terminal before it will probably hidden in your applications within a folder. It can be accessed through the applications page or using spotlight search. When located open up terminal and run `pwd` to make sure your are in your user directory.  
 
 When creating our SSH key we want to store it inside a hidden folder within our file directory. To view your hidden folders within our terminal typeing the command `ls -a` to return all dot folders which are located in the current directory. After running that command if you dont see a folder called  **.ssh**, we will need to make one! To make a folder inside of terminal we will run the command `mkdir .ssh`. 
 
-Now that we have located the folder, we need to enter it using the `cd` command. Running `cd .ssh` will now navigate you into the __.ssh__ folder. 
+Now that we have located/created the folder, we need to enter it using the `cd` command. Running `cd .ssh` will now navigate you into the __.ssh__ folder. 
 
 Next, we will be creating a SSH key within this folder. To do that we run the command `ssh-keygen`, this will immediately prompt you with 3 questions prior. For our purposes it is important you hit enter for each prompt as it will keep names consistent going forward. If all goes well it should display the key as a weird ASCII drawing. Congrats you have successfully created your key. 
 
@@ -86,6 +87,7 @@ Welcome to Ubuntu 20.04.5 LTS (GNU/Linux 5.14.0-1054-oem x86_64)
 ```
 
 *Instructions*
+
 To make sure that the commands I have provided work properly we will be using [Windows PowerShell](https://learn.microsoft.com/en-us/powershell/). If you are new to end up liking working within PowerShell I recommend downloading [Windows Terminal](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701?hl=en-us&gl=us&rtc=1) and installing [Oh-my-Posh](https://ohmyposh.dev/) to improve quality of life when using PowerShell. 
 
 Back to our guide, where we need to open and run Windows PowerShell as administrator. Just to make sure you are in tyhe user directory of choice run `pwd` to confirm.  
