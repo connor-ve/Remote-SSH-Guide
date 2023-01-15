@@ -1,4 +1,4 @@
-CSU Linux Visual Studio Code Guide
+CSU Linux Server and Visual Studio Code Guide
 ============
 #### Table Of Contents
 - [VScode Preparation](#visual-studio-installation-and-setup)
