@@ -10,7 +10,7 @@ Most teachers here at CSU will recommend that you use some version of a client m
 
 This should be a comprehensive guide to help you set up Visual Studio Code as your Client Manager for any CSU Linux needs. If you have any questions please reach out to my contact information that is located both above and below. If this is helpful to you please consider giving my repo a :star: and sharing it! Cheers!
 
-## Visual Studio Installation and Setup 
+## Visual Studio Code Installation and Setup 
 
 As we will be using VScode as our preferred way to log in spirit and grail the first thing we need to do is install it to our local machine. Please click [here](https://code.visualstudio.com/download) to be redirected to the VScode download page. From here select the correct download for the current operating system on your device (Windows, MacOS, or Linux). 
 
@@ -38,10 +38,10 @@ ___
 > pwd
 > cd .ssh
 > ssh-keygen
-... returns 3 prompts (HIT ENTER FOR EACH)
+#... returns 3 prompts (HIT ENTER FOR EACH)
 > cat ~/.ssh/id_rsa.pub | ssh {your_username}@spirit.eecs.csuohio.edu 'cat >> ~/.ssh/authorized_keys'
-{your_username}'s password: (ENTER YOUR PASSWORD)
-Welcome to Ubuntu 20.04.5 LTS (GNU/Linux 5.14.0-1054-oem x86_64) 
+# Enter {your_username}'s password: (ENTER YOUR PASSWORD)
+# Welcome to Ubuntu 20.04.5 LTS (GNU/Linux 5.14.0-1054-oem x86_64) 
 ```
 
 *Instructions*
@@ -80,10 +80,10 @@ ___
 > md .ssh
 > cd .ssh
 > ssh-keygen
-... returns 3 prompts (HIT ENTER FOR EACH)
+# ... returns 3 prompts (HIT ENTER FOR EACH)
 > cat ~/.ssh/id_rsa.pub | ssh {your_username}@spirit.eecs.csuohio.edu 'cat >> ~/.ssh/authorized_keys'
-{your_username}'s password: (ENTER YOUR PASSWORD)
-Welcome to Ubuntu 20.04.5 LTS (GNU/Linux 5.14.0-1054-oem x86_64) 
+# enter {your_username}'s password: (ENTER YOUR PASSWORD)
+# Welcome to Ubuntu 20.04.5 LTS (GNU/Linux 5.14.0-1054-oem x86_64) 
 ```
 
 *Instructions*
@@ -132,6 +132,8 @@ For this part, open visual studio and run the command `ctrl + shift + p`. For th
 Click on the desired directory and you will be taken to the configuration file for the Remote-SSH Extension. Within my repository I have example of what to paste to this file, but make sure you replace {YOUR_USER} with your linux login. Once done with this, hit `cmd + s` to save your config file. You are now free to exit this file. 
 
 ![](Screenshots/templateConfig.jpg)
+
+>**Note for CIS 408 users**, if you would like to use one of the other servers, cis.csuohio.edu, grail.eecs.csuohio.edu, etc. this can be added. Each host in our config file represent a separate host to join for remote-ssh. If you want to add a specific server to the config file, copy the format for your spirit host, and paste it below in the same config file. replace the host tag with the desired name, and the hostname with the new server name. The rest of the tag will stay the same as before as our server maintains the same files aka your ssh-key will be the same as spirit. 
 
 ## Opening up Spirit with Visual Studio Code
 

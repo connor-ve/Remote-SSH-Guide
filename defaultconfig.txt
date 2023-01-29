@@ -2,3 +2,9 @@ Host CSUSpirit
     Hostname spirit.eecs.csuohio.edu
     User {YOUR_USER}
     IdentityFile ~/.ssh/id_rsa
+
+# example of added Host
+# Host CSUcis
+#     Hostname cis.csuohio.edu
+#     User {YOUR_USER}
+#     IdentityFile ~/.ssh/id_rsa
